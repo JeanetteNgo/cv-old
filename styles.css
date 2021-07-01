@@ -40,6 +40,14 @@ body {
     padding: 60px;
 }
 
+.img-box {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 h1 {
     font-size: 32px;
     margin-bottom: 8px;
@@ -53,6 +61,7 @@ h1 {
 p {
     font-size: 14px;
     font-weight: 500;
+    line-height: 24px;
 }
 
 a {
