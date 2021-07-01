@@ -20,7 +20,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: 80vh;
     background-color: #fff;
     margin: 50px;
@@ -31,13 +31,14 @@ body {
 
 .column-left {
     position: relative;
-    background-color: rgb(255, 245, 255);
+    background-color: rgb(255, 248, 255);
     padding: 60px;
 }
 .column-right {
     position: relative;
     background-color: #fff;
     padding: 60px;
+    padding-top: 80px;
 }
 
 .img-box {
@@ -48,17 +49,18 @@ body {
     margin: 20px;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 8px;
-}
-#location {
+.location {
     color: #fe3414;
+    font-weight: 600;
+    font-size: 16px;
+}
+.intro {
     font-weight: 600;
     font-size: 16px;
 }
 
 p {
+    color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -66,13 +68,13 @@ p {
 
 a {
     font-size: 14px;
-    padding: 3px;
     text-decoration: none;
     color: #450070aa;
     font-weight: 500;
     transition: 0.5s;
 }
 a:hover {
+    color: #fe3414;
     font-weight: 600;
     transition: 0.5s;
 }
@@ -81,41 +83,113 @@ a:hover {
     color: #450070;
     list-style: none;
     font-size: 16px;
-    margin: 20px 0px;
-    padding: 10px;
-    align-items: center;
-    border-top: 2px solid #450070aa;
-    border-bottom: 2px solid #450070aa;
+    margin-top: 16px;
+    margin-left: -18px;
 }
-.contact-info ul {
-    position: relative;
-}
-.contact-info ul li {
-    position: relative;
-    margin: 10px 0;
-    cursor: pointer;
-}
+
 .icon {
     display: inline-block;
-    width: 25px;
-    font-size: 18px;
-    color: #450070;
+    width: 22px;
+}
+.icon-large {
+    display: inline-block;
+    width: 32px;
 }
 
 .title {
-    margin: 15px 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.institution {
+    color: rgba(71, 28, 28, 0.8);
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.education h3 {
-    color: #450070cc;
-    padding: 8px 0;
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
 }
-.education li {
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #450070dd;
+    margin-top: 6px;
+    font-weight: 600;
+}
+h4 {
+    color: rgba(71, 28, 28, 0.7);
+    margin: 2px 0;
+    font-weight: 600;
+}
+ul {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+li {
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.65);
+}
+.content-block {
+    margin: 12px;
+}
+.content-sub-block {
+    margin-top: 20px;
+}
+.no-bullet {
     list-style: none;
 }
 
 .date {
-    color: slategrey;
-    font-size: 14px;
-    font-weight: 500;
+    color: #fe0070;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+.tag {
+    background-color: #fe0070;
+    color: #fef;
+    font-size: 12.5px;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .img-box {
+        height: 100px;
+        /* display: none; */
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #450070 */
+    }
+    .column-right {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro {
+        text-align: center;
+    }
+    .contact-info {
+        margin-top: 20px;
+    }
+    li {
+        margin-left: 14px;
+    }
 }
