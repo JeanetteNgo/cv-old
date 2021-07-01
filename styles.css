@@ -158,6 +158,17 @@ li {
     padding: 3px 6px;
     border-radius: 6px;
 }
+.pdf {
+    background-color: rgb(255, 248, 255);
+    color: #450070aa;
+    padding: 10px;
+    padding-left: 20px;
+    font-weight: 500;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.pdf:hover {
+    font-weight: 600;
+}
 
 @media (max-width: 800px) {
     .container {
@@ -196,5 +207,11 @@ li {
     }
     li {
         margin-left: 14px;
+    }
+    .pdf {
+        text-align: center;
+        padding-left: 0px;
+        background-color: #fff;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
     }
 }
