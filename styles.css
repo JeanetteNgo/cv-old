@@ -9,6 +9,7 @@
 }
 
 body {
+    background-image: linear-gradient(to bottom right, #320052, #450070);
     color: #450070;
     display: flex;
     justify-content: center;
@@ -165,11 +166,15 @@ li {
         
     }
     .img-box {
-        height: 100px;
+        width: 160px;
+        max-height: 120px;
+        margin-left: 30px;
+        overflow: hidden;
         /* display: none; */
-        align-items: center;
-        justify-content: center;
         /* border: 1px solid #450070 */
+    }
+    img {
+        width: 80px;
     }
     .column-right {
         padding-top: 30px;
