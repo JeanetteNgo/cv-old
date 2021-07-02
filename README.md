@@ -1,2 +1,2 @@
 # resume
-Jeanette's very own resume 
+My very own resume >:D
