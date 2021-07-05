@@ -172,10 +172,14 @@ li {
 
 @media (max-width: 900px) {
     .container {
-        margin: 12px;
+        margin: 10px;
+        max-width: 860px;
+        min-height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
     .column-left {
-        padding: 26px;
+        padding: 24px;
     }
     .column-right {
         padding: 24px;
