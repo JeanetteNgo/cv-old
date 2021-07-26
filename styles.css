@@ -42,12 +42,18 @@ body {
     padding-top: 80px;
 }
 
+
 .img-box {
-    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 24px auto;
+}
+img {
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .location {
@@ -109,7 +115,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 8px;
 }
 h2 {
@@ -196,14 +202,9 @@ li {
         grid-template-columns: repeat(1, 1fr);
         
     }
-    .img-box {
-        width: 160px;
-        max-height: 120px;
-        margin-left: 20px;
-    }
+
     img {
-        width: 80px;
-        margin-left: 40px;
+        max-width: 80px;
     }
     .column-left {
         padding: 40px;
