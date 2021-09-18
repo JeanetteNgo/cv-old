@@ -124,6 +124,7 @@ h2 {
 }
 
 h3 {
+    font-size: 16px;
     color: #450070dd;
     margin-top: 6px;
     font-weight: 600;
@@ -154,7 +155,7 @@ li {
 
 .date {
     color: #ec0066;
-    font-size: 13.5px;
+    font-size: 13px;
     font-weight: 600;
 }
 .tag {
@@ -168,7 +169,7 @@ li {
     background-color: rgb(255, 248, 255);
     color: #450070aa;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 25px;
     font-weight: 500;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
@@ -186,12 +187,23 @@ li {
         grid-template-columns: 1fr 2fr;
     }
     .column-left {
-        padding: 24px;
+        padding: 40px;
     }
     .column-right {
-        padding: 24px;
-        padding-top: 30px;
-        padding-bottom: 50px;
+        padding: 40px;
+    }
+    .img-box {
+        margin: 16px auto;
+    }
+    img {
+        max-width: 80px;
+    }
+    h1 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    h2 {
+        font-size: 22px;
     }
 }
 
